@@ -157,8 +157,8 @@ def train(ngram, name, bar, drop_out, dataset, is_cuda=True, edges=True):
     total_correct = 0
     total = 0
 
-    num_epoch = 4
-    batch_size = 96
+    num_epoch = 50
+    batch_size = 64
     for i in range(num_epoch):  # 训练参数，原batch_size=32, num_epoch=200
         total_content, total_label, total_dep = data_helper.get_review()
         num_per_epoch = int(len(total_content) / batch_size)
