@@ -8,7 +8,7 @@ When training the model, you should pass some parameters which can be checked wi
 
 `python train.py -h`
 
-Examples: 
+Examples: \n
 `python train.py --dataset imdb --ngram 3`
 
 `python train.py --dataset subj --ngram 3`
