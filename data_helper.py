@@ -191,7 +191,3 @@ class DataHelper(object):
                 yield content, torch.tensor(label).cuda(),dep ,i
 
 
-if __name__ == '__main__':
-    data_helper = DataHelper(dataset='r8')
-    content, label = data_helper.get_content()
-    data_helper.build_vocab(content)
