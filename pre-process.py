@@ -92,4 +92,3 @@ for mode in m_list:
     data.index = range(len(data))
 
     data[['review', 'sentiment']].to_csv('p'+mode+'.csv', index=False)
-
